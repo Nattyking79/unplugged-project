@@ -87,6 +87,58 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/* General Styles */
+ 
+html {
+	font-size: 1rem;
+}
+ 
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+}
+ 
+ul, 
+ol {
+ font-size: 18px;
+ font-weight: bold;
+}
+ 
+a {
+	color: #e2e3ed;
+  text-decoration: none;
+}
+ 
+h2 {
+  font-size: 1.875em;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+}
+ 
+h3, 
+h4 {
+  font-size: 1.125em;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+}
+ 
+p {
+	font-size: 0.875em;
+  line-height: 18px;
+}
+ 
+img {
+ 
+}
+ 
+figure {
+ 
+}
+ 
+address {
+ font-style: normal;
+}
+ 
    .content-wrapper {
     width: 90%;
     margin: 50px 0;
@@ -218,7 +270,7 @@ margin: 0;
 }
 
 .reviews h2 {
-
+line-height: 30px;
 }
 
 .reviews h3 {
@@ -262,10 +314,12 @@ FAQ Page
 
 .faq h2 {
 margin: 40px;
+line-height: 30px;
 }
 
 .faq content {
 margin-bottom: 50px 0;
+line-height: 24px;
 }
 
 /* ==========================================================================
