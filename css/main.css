@@ -94,14 +94,17 @@ html {
 }
  
 body {
-  font-family: 'Open Sans', sans-serif;
   font-size: 1em;
+  font-family: 'Open Sans', sans-serif;
+  color: #e2e3ed;
+  text-align: left;
 }
  
 ul, 
 ol {
- font-size: 18px;
- font-weight: bold;
+ list-style-type: none;
+ margin: 0;
+ padding: 0;
 }
  
 a {
@@ -120,38 +123,30 @@ h4 {
   font-size: 1.125em;
   font-weight: 500;
   font-family: 'Poppins', sans-serif;
+  margin: 20px 0;
 }
  
 p {
-	font-size: 0.875em;
-  line-height: 18px;
-}
- 
-img {
- 
-}
- 
-figure {
- 
+	font-size: .875em;
+  line-height: 1.125em;
 }
  
 address {
  font-style: normal;
 }
  
-   .content-wrapper {
-    width: 90%;
-    margin: 50px 0;
-   }  
+.content-wrapper {
+  width: 90%;
+  margin: 50px 0; 
+}  
    
 /* -------------------- Base Header - Footer Styles -------------------- */
-
-/* Header Styles */
 
 header {
   display: flex;
   justify-content: center;
   padding: 15px 0;
+  background-color: #202322;
 }
 
 header .content-wrapper {
@@ -159,36 +154,38 @@ header .content-wrapper {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  margin: 0;
-}
-
-header figure {
-
 }
 
 .header-divider {
+  color: #3a3a3a;
+  height: 1;
   width: 100%;
-  height: 1px;
   margin: 10px 0 20px 0;
 }
 
 header nav {
   width: 60%;
+  font-size: 1.125em;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 header nav ul {
+  width: 100%;
   display: flex;
   justify-content: space-around;
-  width: 100%;
 }
 
-/* Footer Styles */
+header nav ul li {
+  font-size: 1.125em;
+}
 
 footer {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+  background-color: #202322;
 }
  
 footer p {
@@ -228,11 +225,44 @@ margin: 20px 0;
   justify-content: center;
 }
 
+.hero-area h1 {
+  font-size: 2.25em;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
 /* Aside */
 
 aside {
   display: flex;
   justify-content: center;
+}
+
+aside .form {
+  margin-top: 30px;
+}
+
+input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+  padding: 1em;
+}
+
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 /* Features */
@@ -259,22 +289,26 @@ margin: 30px 0;
 }
 
 .features p {
-margin: 0;
+ text-align: center;
+ margin: 0;
 }
 
 /* Reviews */
 
 .reviews {
+  background-color: #2a423a;
   display: flex;
   justify-content: center;
 }
 
 .reviews h2 {
-line-height: 30px;
+  margin-bottom: 40%;
+  line-height: 1;
 }
 
 .reviews h3 {
 width: 55%;
+margin: 20px 0;
 }
 
 /* ==========================================================================
@@ -282,6 +316,7 @@ About Page
    ========================================================================== */
 
 .mission {
+  background-color: #527158;
   display: flex;
   justify-content: center;
 }
@@ -300,6 +335,7 @@ FAQ Page
    ========================================================================== */
 
 .faq {
+  background-color: #527158;
   display: flex;
   justify-content: center;
 }
@@ -313,13 +349,16 @@ FAQ Page
 }
 
 .faq h2 {
-margin: 40px;
-line-height: 30px;
+  margin-bottom: 40px;
+  line-height: 1;
 }
 
 .faq content {
-margin-bottom: 50px 0;
-line-height: 24px;
+ margin-bottom: 50px 0;
+}
+
+.faq-content h4 {
+  line-height: 1.333;
 }
 
 /* ==========================================================================
