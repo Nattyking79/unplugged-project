@@ -84,6 +84,17 @@ textarea {
 }
 
 /* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+   .browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+  }
+  
+/* ==========================================================================
    Author's custom styles
    ========================================================================== */
 
@@ -113,16 +124,16 @@ a {
 }
  
 h2 {
-  font-size: 1.875em;
-  font-weight: 500;
   font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 1.875em;
 }
  
 h3, 
 h4 {
-  font-size: 1.125em;
-  font-weight: 500;
   font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
   margin: 20px 0;
 }
  
@@ -131,6 +142,14 @@ p {
   line-height: 1.125em;
 }
  
+img {
+  width: 100%;
+}
+
+figure {
+  margin: 0;
+}
+
 address {
  font-style: normal;
 }
@@ -150,15 +169,20 @@ header {
 }
 
 header .content-wrapper {
+  margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
 }
 
+header figure {
+width: 60%;
+}
+
 .header-divider {
   color: #3a3a3a;
-  height: 1;
+  height: 1px;
   width: 100%;
   margin: 10px 0 20px 0;
 }
@@ -166,7 +190,7 @@ header .content-wrapper {
 header nav {
   width: 60%;
   font-size: 1.125em;
-  font-weight: bold;
+  font-weight: 700;
   text-transform: uppercase;
 }
 
@@ -221,6 +245,10 @@ margin: 20px 0;
 /* Hero-Area */
 
 .hero-area {
+  background: url('../img/unplugged-retreat.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 500px;  
   display: flex;
   justify-content: center;
 }
@@ -235,8 +263,35 @@ margin: 20px 0;
 /* Aside */
 
 aside {
+  background-color: #527158;
   display: flex;
   justify-content: center;
+}
+
+aside .form {
+  margin-top: 30px;
+}
+
+input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+  padding: 1em;
+}
+
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 aside .form {
@@ -268,6 +323,9 @@ input[type=button] {
 /* Features */
 
 .features {
+  background: url(../img/unplugged-retreat-features.jpg);
+  background-size: cover;
+  background-position: center;
   display: flex;
   justify-content: center;
 }
@@ -302,7 +360,7 @@ margin: 30px 0;
 }
 
 .reviews h2 {
-  margin-bottom: 40%;
+  margin-bottom: 40px;
   line-height: 1;
 }
 
@@ -322,6 +380,7 @@ About Page
 }
 
 .contact-section {
+  background-color: #2a423a;
   display: flex;
   justify-content: center;
 }
@@ -354,7 +413,7 @@ FAQ Page
 }
 
 .faq content {
- margin-bottom: 50px 0;
+ margin-bottom: 50px;
 }
 
 .faq-content h4 {
